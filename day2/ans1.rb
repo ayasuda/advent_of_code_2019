@@ -25,8 +25,11 @@ def run(program)
   end
 end
 
+program = ""
+
 while l = gets
   program = l.strip.split(",").map(&:to_i)
-  result = run(program)
-  p result.join(",")
 end
+
+result = run(program)
+p result.join(",")
